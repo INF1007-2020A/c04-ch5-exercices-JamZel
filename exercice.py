@@ -13,25 +13,26 @@ def convert_to_absolute(number: float) -> float:
 
 
 def use_prefixes() -> List[str]:
-    prefixes, suffixe = 'JKLMNOPQ', 'ack'
-    for i in prefixes:
-        list = [prefixes[i] + suffixe]
-
-    return [f"{list}"]
+    #Nope
+    return 0
 
 
 def prime_integer_summation() -> int:
-
-    
-
+    # Nope
     return 0
 
 
 def factorial(number: int) -> int:
+    #Nope
     return 0
 
 
 def use_continue() -> None:
+    for i in range(1, 11):
+      if i == 5:
+          continue
+      else:
+          print(f"{i}")
     pass
 
 
