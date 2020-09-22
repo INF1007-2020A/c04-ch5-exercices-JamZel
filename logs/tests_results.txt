@@ -1,18 +1,8 @@
 test_absolute (__main__.TestExercice) ... ok
 test_factorial (__main__.TestExercice) ... FAIL
-test_prefixes (__main__.TestExercice) ... ERROR
+test_prefixes (__main__.TestExercice) ... FAIL
 test_summation (__main__.TestExercice) ... FAIL
 test_verify_ages (__main__.TestExercice) ... FAIL
-
-======================================================================
-ERROR: test_prefixes (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 26, in test_prefixes
-    output = exercice.use_prefixes()
-  File "/home/runner/work/c04-ch5-exercices-JamZel/c04-ch5-exercices-JamZel/exercice.py", line 18, in use_prefixes
-    list = [prefixes[i] + suffixe]
-TypeError: string indices must be integers
 
 ======================================================================
 FAIL: test_factorial (__main__.TestExercice)
@@ -28,6 +18,14 @@ First differing element 0:
 
 - [0, 0, 0, 0]
 + [1, 6, 40320, 3628800] : Mauvaise réponse
+
+======================================================================
+FAIL: test_prefixes (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 32, in test_prefixes
+    'Mauvaise réponse'
+AssertionError: First sequence is not a list: 0
 
 ======================================================================
 FAIL: test_summation (__main__.TestExercice)
@@ -55,4 +53,4 @@ False
 ----------------------------------------------------------------------
 Ran 5 tests in 0.001s
 
-FAILED (failures=3, errors=1)
+FAILED (failures=4)
